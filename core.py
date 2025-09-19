@@ -10,9 +10,7 @@ from mnemonic import Mnemonic
 
 # Константы для Decimal Chain
 RPC_URLS = [
-    "https://node.decimalchain.com/web3",
-    "http://94.130.66.14/web3/",
-    "http://168.119.212.76/web3/",
+    "https://node.decimalchain.com/web3"
 ]
 DECIMAL_RPC_URL = "http://94.130.66.14/web3/"
 DECIMAL_CHAIN_ID = 75
@@ -343,3 +341,4 @@ def get_private_key_from_seed(seed_phrase: str, derivation_path: str = "m/44'/60
         return account.key.hex()
     except Exception as e:
         raise Exception(f"Ошибка получения приватного ключа: {e}")
+
