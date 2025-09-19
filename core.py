@@ -12,7 +12,7 @@ from mnemonic import Mnemonic
 RPC_URLS = [
     "https://node.decimalchain.com/web3"
 ]
-DECIMAL_RPC_URL = "http://94.130.66.14/web3/"
+DECIMAL_RPC_URL = "https://node.decimalchain.com/web3"
 DECIMAL_CHAIN_ID = 75
 
 # Минимальный ABI для ERC-20 токенов
@@ -341,4 +341,5 @@ def get_private_key_from_seed(seed_phrase: str, derivation_path: str = "m/44'/60
         return account.key.hex()
     except Exception as e:
         raise Exception(f"Ошибка получения приватного ключа: {e}")
+
 
